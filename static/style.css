@@ -1,0 +1,370 @@
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+.body{
+    margin: 0;
+    padding: 0;
+}
+/* Style for the Navbar */
+.navbar {
+    background-color: rgb(113, 212, 113); /* Red background for the navbar */
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between; /* Space between left and right items */
+    align-items: center; /* Center vertically */
+}
+
+.navbar div {
+    display: flex; /* Make both left and right sections flexible */
+}
+
+.navbar ul {
+    list-style-type: none; /* Remove bullets */
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-link-left, .navbar-link-right {
+    color: white; /* White text */
+    text-decoration: none; /* Remove underline */
+    font-size: 23px;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-link-left:hover, .navbar-link-right:hover {
+    background-color: rgb(51, 173, 51); /* Darker red on hover */
+    border-radius: 5px;
+}
+
+/* Additional styling for the rest of the page */
+
+/* Login Form Styling */
+.login-form {
+    width: 100%;
+    max-width: 400px; /* Set a max-width for responsiveness */
+    margin: 30px auto; /* Center the form horizontally */
+    padding: 20px;
+    background-color: #f8f8f8; /* Light background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center;
+}
+
+.login-form h1 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
+}
+
+.login-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+.login-input:focus {
+    border-color: rgb(113, 212, 113); /* Highlight on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Submit Button */
+.form-submit {
+    width: 100%;
+    padding: 12px;
+    background-color: #71D471;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-submit:hover {
+    background-color: #33AD33;
+}
+
+/* Feedback Message */
+.feedback {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.feedback p {
+    font-size: 18px;
+    color: #333;
+}
+.history-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    background-color: #F1F5F9; /* Soft background to make the journal entries pop */
+}
+
+.history-page h1 {
+    text-align: center;
+    font-size: 36px;
+    color: #4CAF50;
+    margin-bottom: 40px;
+}
+/* Background styling */
+.background {
+    background-color:#F1F5F9;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    overflow:scroll;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+}
+/* Journal Page Styling */
+.journal-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #F9FAFB;
+}
+
+.journal {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    max-width: 80%;
+    width: 100%;
+}
+
+.journal h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #4CAF50; /* A bright green to match the theme */
+}
+
+/* Input fields */
+.journal-input {
+    width: 500px;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.journal-input:focus {
+    border-color: #71D471; /* Highlight green on focus */
+    outline: none;
+}
+
+.journal-form{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border: 5px solid black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.landing-page-background {
+    background-color: #FFF3F2;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 80vh;
+    padding: 0 100px;
+}
+
+.landing-container {
+    text-align: center;
+    background-color: white;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+}
+.landing-image {
+    margin-left: 150px;
+    max-width: 100%; /* Ensures responsiveness */
+    border-radius: 12px; /* Rounded corners for a modern look */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Bold, noticeable shadow */
+    transition: box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.landing-image:hover {
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6); /* More intense shadow on hover */
+}
+
+.landing-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.landing-description {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.landing-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.cta-button, .secondary-button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button {
+    background-color: rgb(113, 212, 113);
+    color: white;
+}
+
+.secondary-button {
+    background-color: #f1f1f1;
+    color: #333;
+}
+
+.cta-button:hover {
+    background-color: rgb(51, 173, 51);
+}
+
+.secondary-button:hover {
+    background-color: #e0e0e0;
+}
+/* Website Uses Section */
+.website-uses {
+    padding: 60px 20px;
+    background-color: #f9fafc;
+    text-align: center;
+}
+
+.uses-title {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.uses-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    margin-bottom: 100px;
+    flex-wrap: wrap;
+}
+
+.use-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    width: 300px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.use-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.use-icon {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+.use-box h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.use-box p {
+    font-size: 16px;
+    color: #555;
+}
+/* Apology Page Styling */
+.apology-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #F1F5F9; /* Light background for a clean look */
+    text-align: center;
+}
+
+.apology-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    max-width: 600px;
+    width: 100%;
+}
+
+.apology-container h1 {
+    font-size: 36px;
+    color: #FF5C5C; /* Red color to convey the apology sincerely */
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.apology-container p {
+    font-size: 18px;
+    color: #333; /* Darker text for clarity */
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.apology-container a {
+    color: #4CAF50; /* Bright green for action items */
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.apology-container a:hover {
+    color: #2E7D32; /* Darker green on hover */
+}
+
+/* Button styling (optional) */
+.back-button {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #71D471; /* Green for a positive CTA */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+
